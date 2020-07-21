@@ -27,3 +27,32 @@
 
 **9.订单记录（记录打赏数,今日收入）**
 
+# ** Cloud View cmsv6.0 scope of application:**
+
+
+
+**"Funny videos, learning tutorials, we media short videos, square dance teaching and other content, friends
+
+This system is only used for classroom teaching and other reward, not for illegal use**
+
+**Recommended installation environment: php-5.4 + mysql5.5 + nginx**
+
+## Main functions of background:**
+
+**1. The system does not set up the member video sorting (random sorting Ascending Descending ranking) reward template (one three four templates switch the links sent out, the same step after switching the template), whether to allow computer access, whether to allow agents to upload videos, whether to open the back box promotion, whether to open the random reward number editing agent half station announcement, edit the mobile terminal announcement, edit copyright information, Random end switch of landing domain name, custom setting agent amount limit (without setting 10, the amount of agent youbu cannot exceed 10), agent commission setting, withdrawal procedure setting, etc. Short link url.cn , t.cn switch**
+
+**2. Domain name list - domain name database (storing each domain name) - main connection configuration (the main domain name is not set) 6.0 update the main domain name randomly (replace the primary domain name, switch the domain name database, and replace Zhaoxiang can open (dynamic) ）-Transfer configuration (unlimited and no skip, random domain name hop) full self hijacking detection and self hijacking replacement domain name landing configuration (unlimited addition of landing domain name random debugging) - detection interface (API domain name detection interface configuration, 1-5 second frequency, automatic detection of pull black red domain name, change green domain name) monitoring domain name list**
+
+**3. Agent list (generate invitation to clear code registration, hijack, add agent account number, edit withdrawal service charge, edit agent commission and superior and subordinate)**
+
+**4. Video list - video category addition (need to switch the reward template with classification, can be customized) - VIDEO list (upload local video, add external chain video in batch)**
+
+**5. Order list - feedback record (record agent feedback) - withdrawal record - balance record (record agent account amount change) - order record**
+
+**6. Other settings - Advertising Management (add dynamic / static advertising under the player with reward jump) - complaint record - picture record (upload local pictures without restriction, and background image will be changed every time the reward page is refreshed)**
+
+**7. System update (online one click Update, free package update)**
+
+**8. Balance record (recording agent's balance changes)**
+
+**9. Order record (record reward number, today's revenue)**
