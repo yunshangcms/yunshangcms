@@ -5,6 +5,8 @@
 
 **推荐安装环境：PHP-5.4 +MYSQL5.5+Nginx **
 
+**数据库文件在=>system\data.php修改**
+
 <img src="https://www.0757erp.com/upload/42/1558659355-42/0307397001558659499tp42-1.jpg" width="633" >
 
 ## **后台主要功能:**
@@ -36,6 +38,8 @@
 This system is only used for classroom teaching and other reward, not for illegal use**
 
 **Recommended installation environment: php-5.4 + mysql5.5 + nginx**
+
+**Database file in = > system\ data.php modify**
 
 ## Main functions of background:**
 
