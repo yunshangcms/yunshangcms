@@ -1,7 +1,7 @@
-云赏CMSv6.0适用范围：
+**云赏CMSv6.0适用范围：**
 
 「搞笑视频，学习教程,自媒体短视频，广场舞教学等内容友布!」
-<img src="https://raw.githubusercontent.com/Microsoft/MMdnn/master/docs/supported.jpg" width="633" >
+<img src="https://www.0757erp.com/upload/42/1558659355-42/0307397001558659499tp42-1.jpg" width="633" >
 
 后台主要功能:
 
