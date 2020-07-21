@@ -1,0 +1,1 @@
+<? include('../system/inc.php'); 	$_SESSION['member_id'] = '';  alert_url('/login.php');?>

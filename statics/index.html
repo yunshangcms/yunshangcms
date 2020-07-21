@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/ui.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="laydate/laydate.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<style type="text/css">
+		body>p {font-size: 16px;font-weight: bold;color: #000;margin: 10px 0;}
+		hr {margin: 10px 0;}
+		body {padding: 50px;padding-bottom: 500px;}
+	</style>
+</head>
+<body>
+	<div class="c666">一般型文字</div>
+	<div class="cccc">辅助型文字</div>
+	<div class="cf00">警告型文字</div>
+
+	<p>展开按钮</p>
+	<div class="btn_expand"></div>
+	<p>收缩按钮</p>
+	<div class="btn_contract"></div>
+
+	<p>默认状态</p>
+	<label><span>网站名称：</span><input class="input" type="text" name="" placeholder="默认状态"></label>
+	<!-- <p>选中状态</p>
+	<label><span>网站名称：</span><input class="input focus" type="text" name="" placeholder="选中状态"></label> -->
+	<p>输入错误</p>
+	<label><span>网站名称：</span><input class="input error" type="text" name="" placeholder="输入错误"></label>
+	<p>禁止输入</p>
+	<label><span>网站名称：</span><input class="input" type="text" name="" placeholder="禁止输入" disabled="disabled"></label>
+
+	<p>文本域</p>
+	<label><span>网站名称：</span><textarea class="textarea" name="" cols="200" rows="4" placeholder="建议代码写到模板里 , 这里放内容即可 , <br/> 换行"></textarea></label>
+
+	<p>单选</p>
+	<label><span>网站名称：</span><label class="radio"><input type="radio" name="">未选中</label>
+	<label class="radio"><input type="radio" name="" checked="checked">选中</label></label>
+	
+
+	<p>按钮默认</p>
+	<button class="btn" type="button">提交</button>
+	<!-- <p>按钮鼠标经过</p>
+	<button class="btn hover" type="button">提交</button> -->
+	<p>按钮不可提交</p>
+	<button class="btn disabled" type="button" disabled="disabled">提交</button>
+
+	<p>下拉框</p>
+	<div class="select">
+		<div>请选择</div>
+		<input type="hidden" name="" value="">
+		<ul>
+			<li><span>请选择</span></li>
+			<li><span>下拉菜单一</span>
+				<ul>
+					<li><span>二级菜单</span>
+						<ul>
+							<li><span>三级菜单</span></li>
+							<li><span>三级菜单</span>
+								<ul>
+									<li><span>四级菜单</span></li>
+								</ul>
+							</li>
+							<li><span>三级菜单</span></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><span>下拉菜单二</span>
+				<ul>
+					<li><span>二级菜单</span></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+	ui.select($('.select'));
+	</script>
+
+	<p>辅助按钮</p>
+	<button class="btn_aux" type="button">查询</button>
+
+	<p>分页</p>
+	<div class="page">
+		<div class="page_fonts">共有23条, 每页显示: 20条</div>
+		<a class="page_first" href="javascript:;">&laquo;</a>
+		<a class="page_prev" href="javascript:;">&lsaquo;</a>
+		<a class="pages in" href="javascript:;">1</a>
+		<a class="pages" href="javascript:;">2</a>
+		<a class="page_next" href="javascript:;">&rsaquo;</a>
+		<a class="page_last" href="javascript:;">&raquo;</a>
+	</div>
+
+	<p>标题栏</p>
+	<div class="title_bar">
+		基本信息
+	</div>
+
+	<p>提示</p>
+	<div class="ui_prompt">提示：尊敬的admin（管理员），欢迎您的使用，您的上次登录时间为 2014-12-16 16：23：44，登录IP为 127.0.0.1</div>
+
+	<p>标题</p>
+	<div class="title">
+		<span>基本设置</span>
+	</div>
+	
+	<p>提示错误</p>
+	<a class="btn" href="javascript:;" onclick="ui.prompt(0);">按钮</a>
+	<p>提示成功</p>
+	<a class="btn" href="javascript:;" onclick="ui.prompt(1);">按钮</a>
+	<p>信息提示</p>
+	<a class="btn" href="javascript:;" onclick="dialog_text()">按钮</a>
+	<script type="text/javascript">
+		function dialog_text () {
+			ui.dialog({
+				// text : '<span>111111</span><p>2222222</p>',//提示文字 可不填 
+				confirm : function () {
+					alert('点击确定回调');
+				},
+				cancel : function () {
+					alert('点击取消回调');
+				}
+			});
+		}
+	</script>
+	<p>提示2</p>
+	<a class="btn" href="javascript:;" onclick="ui.dialog_check()">按钮</a>
+
+	<p>表格</p>
+	<div class="table">
+		<table>
+			<thead>
+				<tr>
+					<th width="50"><input type="checkbox" name=""></th>
+					<th class="sort"  width="80"><span>编号</span></th>
+					<th class="sort"  width="200"><span>联系人</span></th>
+					<th width="250"><span>联系方式</span></th>
+					<th class="sort"><span>内容</span></th>
+					<th width="200"><span>留言IP</span></th>
+					<th class="sort" width="200"><span>留言时间</span></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox" name=""></td>
+					<td>1</td>
+					<td>d</td>
+					<td>3</td>
+					<td>啊啊啊</td>
+					<td>5</td>
+					<td>2016-07-05 20:10:55</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name=""></td>
+					<td>2</td>
+					<td>z</td>
+					<td>3</td>
+					<td>啧啧啧</td>
+					<td>5</td>
+					<td>2016-07-02 20:10:55</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name=""></td>
+					<td>3</td>
+					<td>a</td>
+					<td>3</td>
+					<td>嘎嘎嘎</td>
+					<td>5</td>
+					<td>2016-07-04 20:10:55</td>
+				</tr>
+				<tr class="last_tr">
+					<td><input type="checkbox" name=""></td>
+					<td class="tal" colspan="6"><a class="btn_aux" href="javascript:;" onclick="ui.dialog()">删除</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript">
+	ui.table($('.table'));
+	</script>
+	
+	<p>时间</p>
+	<label><span>时间：</span><input class="input laydate-icon" type="text" name="" placeholder="选择时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})"></label>
+
+</body>
+</html>

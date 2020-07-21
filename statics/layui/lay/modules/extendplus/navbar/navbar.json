@@ -1,0 +1,44 @@
+﻿[
+  {
+    "title": "这是动态渲染的", 
+    "icon": "ဂ", 
+    "href": "",
+    "spread": true, 
+    "children": [ 
+      {
+        "title": "表单",
+        "icon": "",
+        "href": "form.html"
+      }
+    ]
+  },
+  {
+    "title": "地址本",
+    "icon": "fa-address-book",
+    "href": "",
+    "spread": false,
+    "children": [
+      {
+        "title": "Github",
+        "icon": "fa-github",
+        "href": "https://www.github.com/"
+      },
+      {
+        "title": "QQ",
+        "icon": "fa-qq",
+        "href": "http://www.qq.com/"
+      },
+      {
+        "title": "Fly社区",
+        "icon": "",
+        "href": "http://fly.layui.com/"
+      }
+    ]
+  },
+  {
+    "title": "33333",
+    "icon": "",
+    "href": "http://fly.layui.com/",
+    "spread": false
+  }
+]

@@ -1,0 +1,95 @@
+.check_diqu {
+    display: none;
+    height: 100%;
+    overflow-x: hidden;
+}
+.layer_diqu .layui-layer-btn {
+    padding: 0!important;
+}
+.layer_diqu .layui-layer-btn a {
+    display: block;
+    margin: 0;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+}
+.check_diqu ul.check_diqu li {
+    *zoom: 1;
+}
+.check_diqu ul:after,.check_diqu li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.check_diqu .layui-form-checkbox {
+    padding: 5px 10px!important;
+}
+.check_diqu .diqu_submit {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.check_diqu>ul {
+    padding: 20px;
+}
+.check_diqu>ul>li {
+    display: block;
+    margin-bottom: 15px;
+}
+.check_diqu>ul>li>.layui-form-checkbox {
+    float: left;
+    max-width: 150px;
+}
+.check_diqu>ul>li>ul {
+    margin-left: 150px;
+}
+.check_diqu>ul>li>ul>li {
+    position: relative;
+    float: left;
+}
+.check_diqu>ul>li>ul>li>.layui-form-checkbox {
+    position: relative;
+    border: 1px solid #fff!important;
+}
+.check_diqu>ul>li>ul>li>ul {
+    opacity: 0;
+    transition: all .3s;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    top: 98%;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.check_diqu .diqu_popup_r {
+    right: 0;
+}
+.check_diqu>ul>li>ul>li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
+.check_diqu>ul>li>ul>li:hover>.layui-form-checkbox {
+    z-index: 2;
+    border-top-color: #ccc!important;
+    border-left-color: #ccc!important;
+    border-right-color: #ccc!important;
+}
+.check_diqu .layui-form-checked-some + .layui-form-checkbox .layui-icon {
+    background-color: #fff;
+    position: relative;
+}
+.check_diqu .layui-form-checked-some + .layui-form-checkbox .layui-icon:after {
+    content: '';
+    position: absolute;
+    left: 12.5%;
+    top: 12.5%;
+    width: 75%;
+    height: 75%;
+    background-color: #5FB878;
+}

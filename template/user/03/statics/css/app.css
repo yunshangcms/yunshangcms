@@ -1,0 +1,27 @@
+body,html {
+    height: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+ul {
+    list-style: none
+}
+
+body {
+    background-color: #f8f8f8
+}
+
+.link {
+    color: #1aad19
+}
+
+.hide{
+  display: none;
+}
+
+.page-title{
+    text-align: center;
+    color: #1aad19;
+    padding: 10px 0;
+}
+

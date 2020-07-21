@@ -1,0 +1,1 @@
+<a href="<?=$_GET['url']?>" target="_blank"><img src="<?=$_GET['url']?>"  width="360PX" /></a>

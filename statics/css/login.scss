@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+}
+.login_bg {
+    overflow-x: hidden;
+    padding-top: 6%;
+    background: url("../img/login_bg.jpg") no-repeat center;
+    background-size: cover;
+}
+.login_from {
+    width: 500px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    border-radius: 5px;
+    background: url("../img/login_form_bg.png") center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
+    position: relative;
+    .layui-form  .layui-input {
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #cfdae6;
+        border-radius: 100px;
+        background: #fff;
+        position: relative;
+        text-indent: 20px;
+        padding: 0 10px;
+        font-size: 16px;
+        &:focus {
+            border: 2px solid #00aaef!important;
+        }
+        &.layui-form-danger {
+            border: 2px solid #fa7252!important;
+        }
+        &::-webkit-input-placeholder {
+            color: #adbdcc;
+        }
+        &:-moz-placeholder {
+            color: #adbdcc;
+        }
+        &::-moz-placeholder {
+            color: #adbdcc;
+        }
+        &:-ms-input-placeholder {
+            color: #adbdcc;
+        }
+    }
+    .layui-btn {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        border-radius: 100px;
+        background: #00aaef;
+        opacity: 1;
+        &:hover {
+            background: #3399cc;
+        }
+    }
+}
+.login_title {
+    margin-bottom: 38px;
+    text-align: center;
+    h1 {
+        font-size: 26px;
+        font-weight: normal;
+        color: #3d5266;
+        line-height: 44px;
+    }
+}
+.errorinfo {
+    display: none;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #fa7252;
+}
+.form_group {
+    margin-bottom: 20px;
+}

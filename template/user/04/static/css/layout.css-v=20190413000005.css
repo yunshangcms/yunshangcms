@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/* 根节点 */
+.root {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #FFFFFF;
+}
+
+.root,
+.root * {
+	padding: 0;
+	margin: 0;
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	color: #333333;
+    /* "微软雅黑", Tahoma, Arial, "Hiragino Sans GB", sans-serif; */
+	font-size: .12rem;
+	line-height: 1;
+    font-family: "PingFang SC","Lantinghei SC","Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+
+/* 存储所有页面 */
+.stack {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.stack .page {
+	display: none;
+}
+.stack .page:last-child {
+	display: block;
+}
+
+/* 存储所有弹框 */
+.mask {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: transparent; /*rgba(0,0,0,.4)*/
+	overflow: auto;
+}
+
+/* 第一次启动页面 */
+.load {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #ffffff;
+	overflow: auto;
+}
+
+.page {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #FFFFFF;
+	overflow: auto;
+	vertical-align: top;
+}
+.page-head {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-flow: row;
+	flex-flow: row;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 0.80rem;
+	/*
+	background-color: #54d9e0;
+	background-color: #71dbe9;
+	*/
+    background: -webkit-linear-gradient(top, #5ed6f9, #58d6fc);
+    background: linear-gradient(top, #5ed6f9, #58d6fc);
+	-webkit-box-shadow: 0 .3rem .5rem rgba(200,200,200, .15);
+	box-shadow: 0 .3rem .5rem rgba(200,200,200, .15);
+	
+}
+.page-head--trans {
+	background: transparent
+}
+.page-head__left,
+.page-head__center,
+.page-head__right {
+}
+.page-head__center {
+	text-align: center;
+	-webkit-flex: auto;
+	flex: auto;
+	font-size: .32rem;
+	line-height: 0.80rem;
+	color: #FFFFFF;
+}
+.page-head__left,
+.page-head__right {
+	width: 0.80rem;
+	height: 0.80rem;
+	-webkit-flex: none;
+	flex: none;
+}
+.page-body,
+.page-body--full {
+	position: absolute;
+	top: 0.80rem;
+	right: 0;
+	bottom: 0.90rem;
+	left: 0;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	background-color: transparent; /* #f2f4f9 F6F7FB */
+    background: -webkit-linear-gradient(top, #f2f4f9, #fefefe);
+    background: linear-gradient(top, #f2f4f9, #fefefe);
+}
+.page-body--full {
+	bottom: 0;
+}
+.page-foot {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 0.90rem;
+	background-color: #ffffff;
+}
+
+.page > .page-body:only-child {
+	top: 0;
+	bottom: 0;
+}
+
+.page > .page-head:nth-last-child(3) ~ .page-body {
+	top: 0.80rem;
+	bottom: 0.90rem;
+}
+
+.page > .page-head:nth-last-child(2) ~ .page-body {
+	top: 0.80rem;
+	bottom: 0;
+}
+
+.page > .page-body:nth-last-child(2) {
+	top: 0;
+	bottom: 0.90rem;
+}
+
+.page > .page-head:nth-last-child(2) ~ .page-body {
+	bottom: 0;
+}
+
+.hide {
+	display: none;
+}
+
+
+.router-view{
+	position: absolute;
+}
