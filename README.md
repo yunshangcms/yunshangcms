@@ -4,8 +4,11 @@
       本系统只用于课堂教学之类打赏，切勿用于非法用法途**
 
 **推荐安装环境：PHP-5.4 +MYSQL5.5+Nginx **
-
+**后台登录地址：http://localhost/adminfywl  账号：CHENG 密码：123456**
+**用户登录地址：http://localhost/login      账户：123   密码：123**
 **数据库文件在=>system\data.php修改**
+
+
 
 <img src="https://www.0757erp.com/upload/42/1558659355-42/0307397001558659499tp42-1.jpg" width="633" >
 
@@ -38,6 +41,8 @@
 This system is only used for classroom teaching and other reward, not for illegal use**
 
 **Recommended installation environment: php-5.4 + mysql5.5 + nginx**
+**Background login address ：http://localhost/adminfywl  admin：CHENG  password：123456**
+**User login address ：http://localhost/login  user:123  password：123**
 
 **Database file in = > system\ data.php modify**
 
